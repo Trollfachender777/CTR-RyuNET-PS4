@@ -68,11 +68,11 @@ Open **3_BUILD_PKG.cmd** in English or **3_GENERAR_PKG.cmd** in Spanish. Leave t
 
 **What it does:** extracts your inputs, prepares the data, compiles and tests the integration, builds the package, and checks the installer. It uses **Work** / **Trabajo** for temporary files and places the result in **Output** / **Salida**.
 
-The bottom line shows approximate progress and the current stage. The current English edition also displays elapsed time and **Stage left (~): calculating...** when no reliable estimate is available for that stage. During **Building and testing** / **Compilando y probando**, the same step may remain visible while tests run.
+Both editions show approximate progress, the current stage, and elapsed time on the bottom line. **Stage left (~): calculating...** in English, or **Falta etapa (~): calculando...** in Spanish, means no reliable estimate is available for that stage. During **Building and testing** / **Compilando y probando**, a step counter shows the current build or test step; it may remain on the same step while that work runs.
 
-The latest memory-management and progress-display fixes are included in the English builder. The Spanish ZIP still contains the previous builder revision.
+Both editions use the same validated packaging engine and resource controls. They run at reduced Windows priority, limit .NET scheduling to at most four workers, and prevent simultaneous builder sessions. A memory guard reclaims resident memory from the builder's own child processes above a soft threshold of 768 MiB per process. This is not a hard cap on total RAM, and temporary peaks can exceed it. No unrelated application or global Windows preference is changed.
 
-To check what is happening, consult the build log: use the **Build log** path in English or `Trabajo/<build>/compilacion.log` in Spanish. A large output file alone does not mean the process is finished: encryption and verification may still be running.
+To check what is happening, consult the **Build log** path in English or **Registro de compilacion** in Spanish (`Trabajo/<build>/compilacion.log`). A large output file alone does not mean the process is finished: encryption and verification may still be running.
 
 ### What is script 2 for?
 
