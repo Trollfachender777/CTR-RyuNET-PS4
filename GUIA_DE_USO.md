@@ -28,6 +28,14 @@ These screenshots show the downloaded ZIP files before extraction. Match the fil
 
 Right-click the ZIP, select **Extract All**, and open the extracted `CTR_RyuNET_Builder_EN` or `CTR_RyuNET_Constructor` folder. Run the scripts from that extracted folder, rather than from inside the ZIP.
 
+### Extracted folders
+
+After extraction, open the folder matching your edition:
+
+| English (EN) | Spanish (ES) |
+| :---: | :---: |
+| ![Extracted English builder folder: CTR_RyuNET_Builder_EN](tutorial-folder-en.png) | ![Extracted Spanish builder folder: CTR_RyuNET_Constructor](tutorial-folder-es.png) |
+
 **What it does:** the builder needs its folders, scripts, and portable tools together. Extracting the entire archive prevents errors caused by missing files. The portable edition does not require a separate Python or compiler installation.
 
 Allow enough space for temporary files and the installer as well as your originals. The builder checks free space at startup; with the base game, update, and DLC used during development, the check requires approximately **55 GB free**. The amount depends on your inputs.
