@@ -122,6 +122,20 @@ Open **3_BUILD_PKG.cmd** in English or **3_GENERAR_PKG.cmd** in Spanish. Leave t
 
 **What it does:** extracts your inputs, prepares the data, compiles and tests the integration, builds the package, and checks the installer. It uses **Work** / **Trabajo** for temporary files and places the result in **Output** / **Salida**.
 
+### Build in progress
+
+These examples show **3_BUILD_PKG.cmd** (English) and **3_GENERAR_PKG.cmd** (Spanish) running while the game is being extracted:
+
+**English (EN)**
+
+![English build in progress with 3_BUILD_PKG.cmd selected and extraction progress visible](tutorial-build-progress-en.png)
+
+**Spanish (ES)**
+
+![Spanish build in progress with 3_GENERAR_PKG.cmd selected and extraction progress visible](tutorial-build-progress-es.png)
+
+The first percentage is approximate progress for the whole build. The percentage beside **Extracting game / Extrayendo juego** applies only to that extraction stage, so the two values can differ. These screenshots show work in progress, not a completed installer. Click an image to view it at full size.
+
 Both editions show approximate progress, the current stage, and elapsed time on the bottom line. **Stage left (~): calculating...** in English, or **Falta etapa (~): calculando...** in Spanish, means no reliable estimate is available for that stage. During **Building and testing** / **Compilando y probando**, a step counter shows the current build or test step; it may remain on the same step while that work runs.
 
 Both editions use the same validated packaging engine and resource controls. They run at reduced Windows priority, limit .NET scheduling to at most four workers, and prevent simultaneous builder sessions. A memory guard reclaims resident memory from the builder's own child processes above a soft threshold of 768 MiB per process. This is not a hard cap on total RAM, and temporary peaks can exceed it. No unrelated application or global Windows preference is changed.
@@ -136,7 +150,13 @@ For normal use, check your inputs and run **3**. Use **2** when you only want to
 
 ## 8. Find the finished installer
 
-Open **Output** in English or **Salida** in Spanish, then open the latest build folder. It contains:
+After the builder reports **Finished** or **Terminado**, return to its main folder. Open **Output** in English or **Salida** in Spanish, highlighted below:
+
+| English (EN) | Spanish (ES) |
+| :---: | :---: |
+| <img src="tutorial-output-en.png" alt="English builder folder with Output selected" width="280"> | <img src="tutorial-output-es.png" alt="Spanish builder folder with Salida selected" width="280"> |
+
+Open the folder for the latest completed build. It contains:
 
 ```text
 CTR Nitro-Fueled Online - RyuNET.pkg
