@@ -18,7 +18,13 @@ This guide covers both the English and Spanish editions. Choose one ZIP and use 
 
 ## 1. Extract the builder
 
-Open [Releases](https://github.com/Trollfachender777/CTR-RyuNET-PS4/releases), select **Builders — English and Spanish**, and expand **Assets**. Download `CTR_RyuNET_Builder_EN.zip` for English or `CTR_RyuNET_Constructor_ES.zip` for Spanish.
+Open [Releases](https://github.com/Trollfachender777/CTR-RyuNET-PS4/releases), select **CTR Nitro-Fueled — Builders — English and Spanish**, and expand **Assets**. Download `CTR_RyuNET_Builder_EN.zip` for English or `CTR_RyuNET_Constructor_ES.zip` for Spanish.
+
+These screenshots show the downloaded ZIP files before extraction. Match the filename to your chosen language; the archive icon may differ depending on your ZIP application.
+
+| English (EN) | Spanish (ES) |
+| :---: | :---: |
+| ![English builder ZIP: CTR_RyuNET_Builder_EN.zip](tutorial-builder-en.png) | ![Spanish builder ZIP: CTR_RyuNET_Constructor_ES.zip](tutorial-builder-es.png) |
 
 Right-click the ZIP, select **Extract All**, and open the extracted `CTR_RyuNET_Builder_EN` or `CTR_RyuNET_Constructor` folder. Run the scripts from that extracted folder, rather than from inside the ZIP.
 
