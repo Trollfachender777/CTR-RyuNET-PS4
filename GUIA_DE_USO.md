@@ -42,7 +42,25 @@ Allow enough space for temporary files and the installer as well as your origina
 
 ## 2. Add the base game
 
-Inside the main folder, open **Input → Game** in the English edition or **Entrada → Juego** in the Spanish edition. Put a single base-game PKG for **CUSA13795** there.
+Open your extracted builder folder. Double-click **Input** in the English edition or **Entrada** in the Spanish edition, highlighted in these screenshots:
+
+| English (EN) | Spanish (ES) |
+| :---: | :---: |
+| <img src="tutorial-contents-en.png" alt="English builder contents with Input selected" width="300"> | <img src="tutorial-contents-es.png" alt="Spanish builder contents with Entrada selected" width="300"> |
+
+### Input folders
+
+Inside **Input** (English) or **Entrada** (Spanish), you will see these three folders:
+
+| English (EN) | Spanish (ES) |
+| :---: | :---: |
+| ![English input folders: DLC, Game, Update](tutorial-input-en.png) | ![Spanish input folders: Actualizacion, DLC, Juego](tutorial-input-es.png) |
+
+Double-click **Game** in English or **Juego** in Spanish. Put a single base-game PKG for **CUSA13795** there.
+
+Use **Update / Actualizacion** for the update in [step 3](#3-add-the-update), and **DLC** for optional add-ons in [step 4](#4-add-your-dlc-if-any).
+
+**Folder path:** `Input/Game` (English) or `Entrada/Juego` (Spanish).
 
 **What it does:** `Input/Game` or `Entrada/Juego` holds the main game input. The builder reads its metadata to identify it. Renaming a file does not change its CUSA or make another edition compatible.
 
