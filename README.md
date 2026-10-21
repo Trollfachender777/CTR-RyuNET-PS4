@@ -1,54 +1,53 @@
 # CTR Nitro-Fueled Online - RyuNET
 
-Una adaptación no oficial para jugar a **Crash Team Racing: Nitro-Fueled en PS4 con RyuNET**, el servicio comunitario utilizado por OCTR en PC. El juego se ejecuta en la consola; la laptop se utiliza para preparar el instalador.
+An unofficial adaptation for playing **Crash Team Racing: Nitro-Fueled on PS4 with RyuNET**, the community service used by OCTR on PC. The game runs on the console; a Windows computer is used to build the installer.
 
-La idea es facilitar la preparación de una instalación a partir de los archivos de cada jugador y ofrecer ajustes propios para PS4 desde **L3+R3**.
+The aim is to make it easier to prepare an installation using each player's own files and provide PS4-specific settings through **L3+R3**.
 
-## Descargar el constructor
+## Download the builder
 
-Entra en [Descargas / Releases](https://github.com/Trollfachender777/CTR-RyuNET-PS4/releases), abre **Constructores — Español e inglés** y elige uno de los ZIP de **Assets**:
+Open [Releases](https://github.com/Trollfachender777/CTR-RyuNET-PS4/releases), select **Builders — English and Spanish**, and choose one of the ZIP files under **Assets**:
 
-| Idioma | Archivo | Carpeta que se obtiene al extraer |
+| Language | File | Folder after extraction |
 | --- | --- | --- |
-| Español | `CTR_RyuNET_Constructor_ES.zip` | `CTR_RyuNET_Constructor` |
 | English | `CTR_RyuNET_Builder_EN.zip` | `CTR_RyuNET_Builder_EN` |
+| Spanish | `CTR_RyuNET_Constructor_ES.zip` | `CTR_RyuNET_Constructor` |
 
-Cada ZIP incluye el constructor, su código fuente y las herramientas portátiles. Descarga el ZIP de tu idioma desde Assets; **Code → Download ZIP** descarga los archivos del repositorio y no sustituye al constructor portátil.
+Each ZIP includes the builder, its source code, and portable tools. Download your language's ZIP from Assets; **Code → Download ZIP** downloads the repository files and does not replace the portable builder.
 
-Las funciones del juego son equivalentes. La edición inglesa incluye la revisión más reciente del control de memoria y del indicador de progreso del constructor. La española conserva la revisión anterior de esas herramientas; no se presenta como si ya tuviera ese cambio.
+The in-game features are equivalent. The English edition includes the latest revision of the builder's memory management and progress display. The Spanish edition still uses the previous revision of those tools.
 
-## Qué ofrece esta adaptación
+## Features
 
-- Constructor local para Windows de 64 bits, con sus herramientas portátiles.
-- Asistente inicial e identidad de RyuNET independiente para cada usuario local de PS4.
-- Apodo propio de RyuNET, separado del nombre de PSN.
-- Límites de 30 y 60 FPS, con «Unlimited» como opción aparte.
-- Resolución interna Native, 720p o 480p, opciones de desenfoque y sombras dinámicas, y restauración de gráficos.
-- Gestión de contactos y unión a partidas mediante el menú Amigos del propio CTR, con clientes compatibles.
+- Local builder for 64-bit Windows, with portable tools.
+- First-run setup and a separate RyuNET identity for each local PS4 user.
+- A RyuNET nickname independent of the PSN name.
+- 30 and 60 FPS caps, with **Unlimited** as a separate option.
+- Native, 720p, or 480p internal resolution; motion blur and dynamic shadow options; and graphics reset.
+- Contact management and joining games through CTR's original Friends menu, using compatible clients.
 
-El límite de 60 FPS es un tope: el rendimiento real depende de la pista y de la consola. Las invitaciones no están implementadas en esta adaptación.
+The 60 FPS setting is a cap: actual performance depends on the track and console. Invitations are not implemented in this PS4 adaptation.
 
-## Antes de empezar
+## Before you start
 
-Esta integración admite **CUSA13795 con la actualización 1.21 y ejecutables compatibles**. Cada persona aporta su juego, actualización y DLC opcionales. No se distribuyen archivos del juego, partidas, cuentas ni claves personales.
+This integration supports **CUSA13795 with update 1.21 and compatible executables**. Each player supplies their own game, update, and optional DLC. Game files, saves, accounts, and personal keys are not distributed.
 
-La referencia de red utilizada es **OCTR 0.5.3**. Las versiones posteriores de PC pueden incorporar funciones que todavía no están adaptadas o comprobadas aquí. No se garantiza compatibilidad con todos los CUSA, versiones de firmware ni condiciones de red.
+The network implementation is based on **OCTR 0.5.3**. Later PC releases may include features that have not yet been adapted or tested here. Compatibility with every CUSA, firmware version, or network setup is not guaranteed.
 
-## Lee las instrucciones en este orden
+## Read the instructions in this order
 
-1. [Preparar los archivos, construir el PKG e instalarlo](GUIA_DE_USO.md).
-2. [Configurar los FPS, los gráficos, el apodo y los amigos](MENU_L3_R3.md).
-3. [Autores, proyectos de referencia y herramientas](CREDITOS.md).
+1. [Prepare your files, build the PKG, and install it](GUIA_DE_USO.md).
+2. [Configure FPS, graphics, your nickname, and friends](MENU_L3_R3.md).
+3. [Authors, upstream projects, and tools](CREDITOS.md).
 
-La guía explica primero **qué hacer** y, debajo de cada paso, **para qué sirve**. Incluye los nombres de carpetas y botones de las ediciones española e inglesa.
+The guide gives the **action first**, followed by **what it does** under each step. It includes the folder and script names for both the English and Spanish editions.
 
-## Agradecimientos principales
+## Main acknowledgments
 
-Este trabajo parte de [OCTR y RyuNET, de Ryu7w7 y sus colaboradores](https://github.com/Ryu7w7/OCTR-NitroFueled-PC), y del [port de Windows de GetLostIn](https://github.com/GetLostIn/CTR-NitroFueled-PC). Los créditos completos incluyen SacredFire, bbport, shadPS4 y las herramientas de desarrollo.
+This work builds on [OCTR and RyuNET by Ryu7w7 and contributors](https://github.com/Ryu7w7/OCTR-NitroFueled-PC), and [GetLostIn's Windows port](https://github.com/GetLostIn/CTR-NitroFueled-PC). The full credits also cover SacredFire, bbport, shadPS4, and the development tools.
 
-La adaptación para PS4 no se atribuye la creación del port original de PC ni del servidor RyuNET. Es un proyecto comunitario independiente, sin afiliación oficial con los titulares del juego.
+The PS4 adaptation does not claim authorship of the original PC port or the RyuNET server. It is an independent community project with no official affiliation with the game's rights holders.
 
-## Estado de las comprobaciones
+## Validation status
 
-Se han comprobado la construcción completa con archivos propios, la lectura de ejecutables desde el PKG generado y las pruebas locales del módulo. El autor ha confirmado el arranque, el acceso a Online y perfiles distintos al cambiar de usuario local en su consola. Una prueba en una consola no demuestra funcionamiento en todos los equipos o redes.
-
+A complete build using the developer's own game files, executable readback from the generated PKG, and local module tests have been checked. The author has confirmed startup, Online access, and separate profiles when switching local users on the development console. Testing on one console does not establish compatibility with every system or network.

@@ -1,137 +1,137 @@
-# Guía de uso: desde las carpetas hasta el primer arranque
+# User guide: from the input folders to your first launch
 
-Esta guía sirve para las ediciones española e inglesa. Elige un solo ZIP y utiliza las carpetas y los botones de esa edición.
+This guide covers both the English and Spanish editions. Choose one ZIP and use the folders and scripts belonging to that edition.
 
-| Operación | Español | English |
+| Action or folder | English edition | Spanish edition |
 | --- | --- | --- |
-| Carpeta principal | `CTR_RyuNET_Constructor` | `CTR_RyuNET_Builder_EN` |
-| Diagnóstico | `0_DIAGNOSTICO.cmd` | `0_DIAGNOSTICS.cmd` |
-| Comprobar las entradas | `1_COMPROBAR.cmd` | `1_CHECK_FILES.cmd` |
-| Solo extraer y preparar | `2_PREPARAR.cmd` | `2_PREPARE_FILES.cmd` |
-| Crear el instalador | `3_GENERAR_PKG.cmd` | `3_BUILD_PKG.cmd` |
-| Juego base | `Entrada/Juego` | `Input/Game` |
-| Actualización | `Entrada/Actualizacion` | `Input/Update` |
-| DLC opcionales | `Entrada/DLC` | `Input/DLC` |
-| Archivos temporales | `Trabajo` | `Work` |
-| Instaladores terminados | `Salida` | `Output` |
-| Código fuente | `Codigo` | `Source` |
+| Main folder | `CTR_RyuNET_Builder_EN` | `CTR_RyuNET_Constructor` |
+| Diagnostics | `0_DIAGNOSTICS.cmd` | `0_DIAGNOSTICO.cmd` |
+| Check input files | `1_CHECK_FILES.cmd` | `1_COMPROBAR.cmd` |
+| Extract and prepare only | `2_PREPARE_FILES.cmd` | `2_PREPARAR.cmd` |
+| Build the installer | `3_BUILD_PKG.cmd` | `3_GENERAR_PKG.cmd` |
+| Base game | `Input/Game` | `Entrada/Juego` |
+| Update | `Input/Update` | `Entrada/Actualizacion` |
+| Optional DLC | `Input/DLC` | `Entrada/DLC` |
+| Temporary files | `Work` | `Trabajo` |
+| Completed installers | `Output` | `Salida` |
+| Source code | `Source` | `Codigo` |
 
-## 1. Extraer el constructor
+## 1. Extract the builder
 
-Entra en [Descargas / Releases](https://github.com/Trollfachender777/CTR-RyuNET-PS4/releases), abre **Constructores — Español e inglés** y despliega **Assets**. Descarga `CTR_RyuNET_Constructor_ES.zip` si quieres español o `CTR_RyuNET_Builder_EN.zip` si quieres inglés.
+Open [Releases](https://github.com/Trollfachender777/CTR-RyuNET-PS4/releases), select **Builders — English and Spanish**, and expand **Assets**. Download `CTR_RyuNET_Builder_EN.zip` for English or `CTR_RyuNET_Constructor_ES.zip` for Spanish.
 
-Haz clic derecho sobre el ZIP, elige **Extraer todo** y abre la carpeta `CTR_RyuNET_Constructor` o `CTR_RyuNET_Builder_EN`, según la edición elegida. Trabaja desde esa carpeta extraída, sin ejecutar los botones desde el interior del ZIP.
+Right-click the ZIP, select **Extract All**, and open the extracted `CTR_RyuNET_Builder_EN` or `CTR_RyuNET_Constructor` folder. Run the scripts from that extracted folder, rather than from inside the ZIP.
 
-**Para qué sirve:** el constructor necesita encontrar juntas sus carpetas, sus scripts y sus herramientas portátiles. Extraerlo completo evita errores por archivos que no se hayan copiado. En la edición portátil no necesitas instalar Python o el compilador por separado.
+**What it does:** the builder needs its folders, scripts, and portable tools together. Extracting the entire archive prevents errors caused by missing files. The portable edition does not require a separate Python or compiler installation.
 
-Deja espacio para los archivos temporales y el instalador, además de tus originales. El constructor comprueba el espacio al comenzar; con el ejemplo de juego base, actualización y DLC, el chequeo pide aproximadamente **55 GB libres**. La cantidad depende de tus entradas.
+Allow enough space for temporary files and the installer as well as your originals. The builder checks free space at startup; with the base game, update, and DLC used during development, the check requires approximately **55 GB free**. The amount depends on your inputs.
 
-## 2. Colocar el juego base
+## 2. Add the base game
 
-Dentro de la carpeta principal, abre **Entrada → Juego** si elegiste español, o **Input → Game** si elegiste inglés. Coloca ahí un único PKG del juego base de **CUSA13795**.
+Inside the main folder, open **Input → Game** in the English edition or **Entrada → Juego** in the Spanish edition. Put a single base-game PKG for **CUSA13795** there.
 
-**Para qué sirve:** `Entrada/Juego` o `Input/Game` es la entrada del juego principal. El constructor lee sus metadatos para identificarlo. Cambiar el nombre de un archivo no cambia su CUSA ni vuelve compatible otra edición.
+**What it does:** `Input/Game` or `Entrada/Juego` holds the main game input. The builder reads its metadata to identify it. Renaming a file does not change its CUSA or make another edition compatible.
 
-Si tu único PKG ya contiene el juego completo actualizado a **1.21**, también puede ir aquí: en ese caso deja `Entrada/Actualizacion` o `Input/Update` vacía. Un PKG que contiene solamente una actualización no sustituye al juego completo.
+If your single PKG already contains the complete game updated to **1.21**, it can go here too. In that case, leave `Input/Update` or `Entrada/Actualizacion` empty. A PKG containing only an update cannot replace the complete game.
 
-## 3. Colocar la actualización
+## 3. Add the update
 
-Abre **Entrada → Actualizacion** en español o **Input → Update** en inglés y coloca un único PKG de la actualización **1.21 para CUSA13795**, salvo que ya esté integrada en el juego completo del paso anterior.
+Open **Input → Update** in English or **Entrada → Actualizacion** in Spanish and add a single **1.21 update PKG for CUSA13795**, unless it is already merged into the complete game from the previous step.
 
-**Para qué sirve:** la actualización aporta los ejecutables y datos que espera esta integración. El constructor prepara una combinación temporal del juego y la actualización; conserva los archivos originales que has colocado en las carpetas de entrada.
+**What it does:** the update supplies the executables and data expected by this integration. The builder prepares a temporary combination of the game and update while preserving the original files in your input folders.
 
-Si la comprobación rechaza la edición o los ejecutables, revisa tus entradas. Una actualización de otro CUSA no se vuelve compatible por renombrarla.
+If validation rejects the edition or executables, check your inputs. Renaming an update from another CUSA does not make it compatible.
 
-## 4. Añadir los DLC, si los tienes
+## 4. Add your DLC, if any
 
-Abre **Entrada/DLC** en español o **Input/DLC** en inglés y coloca ahí los PKG de tus DLC compatibles con **CUSA13795**. Si no vas a utilizar DLC, deja la carpeta vacía. No pongas aquí el juego base ni la actualización.
+Open **Input/DLC** in English or **Entrada/DLC** in Spanish and add your DLC PKGs compatible with **CUSA13795**. Leave the folder empty if you are not using DLC. Do not put the base game or update here.
 
-**Para qué sirve:** el constructor reconoce los complementos por separado y prepara instaladores asociados a la aplicación resultante. Los DLC son opcionales y sus PKG se instalan después del principal; no se fusionan todos en un único instalador.
+**What it does:** the builder detects add-ons separately and prepares installers associated with the resulting application. DLC is optional. Its PKGs are installed after the main application; everything is not merged into one installer.
 
-El ejemplo utilizado durante el desarrollo incluye Deluxe Pack. Eso no equivale a haber comprobado todos los DLC existentes en todas las consolas.
+The development example includes Deluxe Pack. That does not mean every available DLC has been tested on every console.
 
-## 5. Revisar las herramientas
+## 5. Check the tools
 
-Vuelve a la carpeta principal y abre **0_DIAGNOSTICO.cmd** en español o **0_DIAGNOSTICS.cmd** en inglés. Lee el resultado de la ventana y cierra el diagnóstico cuando termine.
+Return to the main folder and open **0_DIAGNOSTICS.cmd** in English or **0_DIAGNOSTICO.cmd** in Spanish. Read the result in the window and close diagnostics when it finishes.
 
-**Para qué sirve:** comprueba que las herramientas portátiles incluidas pueden ejecutarse. No genera un PKG ni modifica la PS4. Si indica que falta el runtime, vuelve a extraer el ZIP completo antes de continuar.
+**What it does:** checks whether the included portable tools can run. It does not generate a PKG or modify the PS4. If it reports a missing runtime, extract the entire ZIP again before continuing.
 
-## 6. Comprobar lo que has colocado
+## 6. Check your input files
 
-Abre **1_COMPROBAR.cmd** en español o **1_CHECK_FILES.cmd** en inglés. Revisa que reconozca el juego, el CUSA, la actualización y los DLC que hayas añadido.
+Open **1_CHECK_FILES.cmd** in English or **1_COMPROBAR.cmd** in Spanish. Check that it recognizes the game, CUSA, update, and any DLC you added.
 
-**Para qué sirve:** comprueba la distribución de las entradas y sus metadatos antes de comenzar el trabajo largo. Todavía no construye el instalador. La extracción y las comprobaciones posteriores validan también los ejecutables que necesita el port.
+**What it does:** checks input placement and metadata before the lengthy build begins. It does not build the installer yet. Extraction and later checks also validate the executables required by the adaptation.
 
-## 7. Crear el PKG
+## 7. Build the PKG
 
-Abre **3_GENERAR_PKG.cmd** en español o **3_BUILD_PKG.cmd** en inglés y deja la ventana abierta hasta que muestre **Terminado** o **Finished** y la carpeta del resultado. No ejecutes dos construcciones al mismo tiempo.
+Open **3_BUILD_PKG.cmd** in English or **3_GENERAR_PKG.cmd** in Spanish. Leave the window open until it displays **Finished** or **Terminado** and the output folder. Do not run two builds at the same time.
 
-**Para qué sirve:** este paso extrae las entradas, prepara los datos, compila y prueba la integración, construye el paquete y comprueba el instalador. Usa **Trabajo** / **Work** como espacio temporal y deja el resultado en **Salida** / **Output**.
+**What it does:** extracts your inputs, prepares the data, compiles and tests the integration, builds the package, and checks the installer. It uses **Work** / **Trabajo** for temporary files and places the result in **Output** / **Salida**.
 
-La línea inferior muestra el progreso aproximado y la etapa. En la edición inglesa actual también muestra el tiempo transcurrido y **Stage left (~): calculating...** cuando no hay una estimación fiable de esa etapa. Durante **Compilando y probando** / **Building and testing** puede permanecer un rato en el mismo paso mientras se ejecutan pruebas.
+The bottom line shows approximate progress and the current stage. The current English edition also displays elapsed time and **Stage left (~): calculating...** when no reliable estimate is available for that stage. During **Building and testing** / **Compilando y probando**, the same step may remain visible while tests run.
 
-La corrección más reciente de memoria y de este indicador está incluida en el constructor inglés. El ZIP español conserva la revisión anterior del constructor.
+The latest memory-management and progress-display fixes are included in the English builder. The Spanish ZIP still contains the previous builder revision.
 
-Si necesitas comprobar qué hace, consulta el registro de la construcción: `Trabajo/<construcción>/compilacion.log` en español o la ruta de **Build log** en inglés. No concluyas que terminó por ver un archivo grande: el cifrado y las verificaciones todavía pueden estar trabajando.
+To check what is happening, consult the build log: use the **Build log** path in English or `Trabajo/<build>/compilacion.log` in Spanish. A large output file alone does not mean the process is finished: encryption and verification may still be running.
 
-### ¿Y para qué sirve el botón 2?
+### What is script 2 for?
 
-**2_PREPARAR.cmd** / **2_PREPARE_FILES.cmd** es una alternativa opcional para **extraer y comprobar los archivos sin crear un PKG**. No es un requisito del paso 3. Si ejecutas el 2 y después el 3, el 3 vuelve a preparar las entradas en otra carpeta de trabajo.
+**2_PREPARE_FILES.cmd** / **2_PREPARAR.cmd** is an optional way to **extract and validate files without creating a PKG**. It is not required before step 3. If you run 2 and then 3, step 3 prepares the inputs again in another work folder.
 
-Para el uso habitual basta con comprobar las entradas y ejecutar el **3**. El **2** sirve cuando solo quieres obtener una preparación y revisar sus archivos.
+For normal use, check your inputs and run **3**. Use **2** when you only want to prepare and inspect the files.
 
-## 8. Encontrar el instalador terminado
+## 8. Find the finished installer
 
-Abre **Salida** en español o **Output** en inglés y entra en la carpeta de la construcción más reciente. Dentro encontrarás:
+Open **Output** in English or **Salida** in Spanish, then open the latest build folder. It contains:
 
 ```text
 CTR Nitro-Fueled Online - RyuNET.pkg
-INSTALAR.txt o INSTALL.txt
-DLC/                                  ← si añadiste DLC
+INSTALL.txt or INSTALAR.txt
+DLC/                                  ← if you added DLC
 ```
 
-**Para qué sirve:** el PKG principal es la aplicación que instalarás en PS4. `INSTALAR.txt` o `INSTALL.txt` recuerda el orden de instalación. La subcarpeta `DLC` contiene los instaladores de los complementos que hayas preparado.
+**What it does:** the main PKG is the application you install on PS4. `INSTALL.txt` or `INSTALAR.txt` explains the installation order. The `DLC` subfolder contains installers for any add-ons you prepared.
 
-Para compartir el constructor limpio, conserva el ZIP original. Tus carpetas `Entrada` / `Input`, `Trabajo` / `Work` y `Salida` / `Output`, una vez utilizadas, contienen material propio y no forman parte del constructor limpio.
+Keep the original ZIP if you want to share a clean builder. Once used, your `Input` / `Entrada`, `Work` / `Trabajo`, and `Output` / `Salida` folders contain your own material and are not part of the clean builder.
 
-## 9. Llevar el resultado a PS4 e instalarlo
+## 9. Transfer the result to PS4 and install it
 
-Con el juego cerrado, copia el PKG principal al medio de instalación que ya utilices con tu PS4. Abre **Package Installer** en tu configuración de GoldHEN e instala primero **CTR Nitro-Fueled Online - RyuNET.pkg**. Si generaste DLC, instala después los PKG de la carpeta **DLC**.
+With the game closed, copy the main PKG to the installation medium you already use with your PS4. Open **Package Installer** in your GoldHEN setup and install **CTR Nitro-Fueled Online - RyuNET.pkg** first. If you generated DLC, install the PKGs from the **DLC** folder afterward.
 
-**Para qué sirve:** primero se instala la aplicación a la que pertenecen los complementos. El constructor de la laptop prepara los archivos; la instalación se realiza en la consola. El medio utilizado debe admitir un archivo de más de 4 GB.
+**What it does:** installs the application before the add-ons that belong to it. The Windows builder prepares the files; installation happens on the console. Your installation medium must support a file larger than 4 GB.
 
-Si sustituyes una instalación que utilizabas, conserva antes una copia de tus partidas. No necesitas borrar tus datos para que otro usuario local tenga su propia identidad de RyuNET.
+Before replacing an installation you already use, back up your saves. You do not need to delete save data for another local user to have their own RyuNET identity.
 
-## 10. Elegir tu identidad de RyuNET
+## 10. Choose your RyuNET identity
 
-Abre la aplicación en PS4. En el asistente, elige un apodo de **3 a 16 caracteres** usando letras, números, guion o guion bajo. Guarda el cambio, cierra el juego normalmente y vuelve a abrirlo.
+Launch the application on PS4. In the setup wizard, choose a nickname of **3–16 characters** using letters, numbers, hyphens, or underscores. Save it, close the game normally, and launch it again.
 
-**Para qué sirve:** se prepara una identidad de RyuNET para ese usuario local. Al abrir el juego desde otra cuenta local de PS4, esa cuenta puede configurar su propio perfil. No tienes que utilizar como apodo tu nombre de PSN ni el de otra persona.
+**What it does:** prepares a RyuNET identity for that local user. When another local PS4 account launches the game, it can set up its own profile. You do not have to use your PSN name or someone else's nickname.
 
-Si omites el asistente, puedes jugar offline y configurar después el apodo desde **L3+R3 → Online → Mi apodo** o **My nickname**. Las identidades y claves personales se guardan en tu consola; no se comparten con el constructor.
+If you skip the wizard, you can play offline and set a nickname later under **L3+R3 → Online → My nickname**, or **Mi apodo** in Spanish. Personal identities and keys are stored on your console and are not shared with the builder.
 
-## 11. Entrar a Online y abrir los ajustes
+## 11. Go Online and open the settings
 
-Entra en **Online** desde el menú del juego. Para los ajustes adicionales, presiona a la vez **L3+R3**, es decir, pulsa ambos sticks hacia dentro. Consulta [la guía del menú](MENU_L3_R3.md) para cada opción.
+Select **Online** from the game's menu. To open the additional settings, press **L3+R3 together** by clicking both analog sticks. See the [menu guide](MENU_L3_R3.md) for each option.
 
-**Para qué sirve:** el Online utiliza RyuNET. L3+R3 abre los ajustes propios de esta adaptación para gestionar el apodo, los contactos y los gráficos. La disponibilidad del servicio y la compatibilidad de los clientes también intervienen en la conexión.
+**What it does:** Online connects through RyuNET. L3+R3 opens this adaptation's settings for your nickname, contacts, and graphics. Service availability and client compatibility also affect connectivity.
 
-## Si aparece un problema
+## Troubleshooting
 
-### El menú sigue en español después de instalar la edición inglesa
+### The menu is still Spanish after installing the English edition
 
-Si utilizaste una prueba antigua con un parche de GoldHEN que cargaba el módulo externo de RyuNET, cierra el juego y revisa esa redirección antigua antes de reconstruir otro PKG. Desactiva únicamente ese parche y vuelve a abrir la aplicación instalada.
+If you used an older test with a GoldHEN patch that loaded an external RyuNET module, close the game and check that old redirection before rebuilding another PKG. Disable only that patch and relaunch the installed application.
 
-**Por qué puede pasar:** el parche antiguo puede cargar el módulo español de `/data/ryunet/ctr_online.prx` en lugar del módulo incluido en el PKG. El idioma del menú personalizado corresponde a su módulo; cambiar el idioma del sistema no traduce esos textos. Esta incidencia no requiere desactivar GoldHEN entero.
+**Why it can happen:** the old patch can load the Spanish module from `/data/ryunet/ctr_online.prx` instead of the module included in the PKG. The custom menu's language belongs to its module; changing the system language does not translate those strings. You do not need to disable GoldHEN entirely.
 
-### No hay espacio suficiente
+### Not enough free space
 
-Libera espacio o utiliza una ubicación con capacidad suficiente y vuelve a ejecutar el paso correspondiente. Conserva tus originales y partidas al elegir qué retirar.
+Free some space or use a location with sufficient capacity, then rerun the relevant step. Preserve your original files and saves when choosing what to remove.
 
-**Por qué ocurre:** durante la construcción conviven las entradas, los datos preparados y el instalador. El espacio necesario supera el tamaño del ZIP del constructor.
+**Why it happens:** the input files, prepared data, and installer coexist during a build. The required space is much greater than the builder ZIP's size.
 
-### No aparece el amigo o no permite unirse
+### A friend is missing or cannot be joined
 
-Comprueba el apodo exacto de RyuNET, que ambos clientes sean compatibles y que exista una sala con plazas esperando antes de la carrera. Si la lista conserva un estado antiguo, cierra y vuelve a abrir los clientes para renovar la consulta.
+Check the exact RyuNET nickname, client compatibility, and that a lobby with free slots is waiting before a race. If the list retains an old status, close and relaunch the clients to refresh the query.
 
-**Para qué sirve:** distingue un contacto mal escrito, una consulta antigua o una sala no disponible de un fallo de construcción. Una prueba en la misma red no demuestra que funcionen todas las conexiones entre casas o países.
+**What it does:** helps distinguish an incorrect nickname, stale query, or unavailable lobby from a build failure. A test on the same network does not establish compatibility with every connection between homes or countries.

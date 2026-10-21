@@ -1,10 +1,10 @@
-# Guía del menú L3+R3
+# L3+R3 settings guide
 
-Presiona **L3 y R3 a la vez** para abrir **RyuNET - Ajustes PS4** en español o **RyuNET - PS4 Settings** en inglés. Pulsa **Círculo** para volver al juego.
+Press **L3 and R3 together** to open **RyuNET - PS4 Settings** in English or **RyuNET - Ajustes PS4** in Spanish. Press **Circle** to return to the game.
 
-Las rutas siguientes usan los nombres ingleses como referencia. Si instalaste la edición española, utiliza sus equivalentes:
+The paths below use the English labels. If you installed the Spanish edition, use these equivalents as they appear in its module:
 
-| English | Español, como aparece en el módulo |
+| English | Spanish module label |
 | --- | --- |
 | FPS and graphics | FPS y graficos |
 | FPS limit / Unlimited | Limite de FPS / Sin limite |
@@ -21,66 +21,66 @@ Las rutas siguientes usan los nombres ingleses como referencia. Si instalaste la
 | View / remove / View list | Ver / eliminar / Ver lista |
 | Remove friend | Eliminar amigo |
 
-## 1. Elegir un límite de FPS
+## 1. Choose an FPS cap
 
-Abre **FPS and graphics → FPS limit → 30 / 60 FPS** y selecciona **30 FPS** o **60 FPS**. Acepta y vuelve al juego.
+Open **FPS and graphics → FPS limit → 30 / 60 FPS** and select **30 FPS** or **60 FPS**. Confirm and return to the game.
 
-**Para qué sirve:** establece un tope real para los fotogramas. El cambio se aplica al volver al juego, sin reiniciarlo. Elegir 60 no garantiza que la consola alcance exactamente 60 en todas las pistas o situaciones.
+**What it does:** sets an actual frame-rate cap. The change takes effect when you return to the game, without restarting it. Choosing 60 does not guarantee that the console can reach exactly 60 FPS on every track or in every situation.
 
-Si prefieres quitar ese limitador, vuelve a **FPS limit** y elige **Unlimited**.
+To remove this cap, return to **FPS limit** and choose **Unlimited**.
 
-**Para qué sirve:** deja el juego sin el límite de este módulo. Puede aumentar la carga y el consumo; no asegura que la consola o la pantalla permitan mostrar más fotogramas.
+**What it does:** removes this module's frame-rate limit. It may increase load and power use; it does not ensure that the console or display can show more frames.
 
-## 2. Cambiar la resolución interna
+## 2. Change the internal resolution
 
-Entra en **FPS and graphics → Graphics → Internal resolution**. Pulsa **Next** hasta ver **Native**, **720p** o **480p** en **Selected**. Pulsa **Apply**, cierra la aplicación normalmente y vuelve a abrirla.
+Open **FPS and graphics → Graphics → Internal resolution**. Press **Next** until **Selected** shows **Native**, **720p**, or **480p**. Press **Apply**, close the application normally, and relaunch it.
 
-**Para qué sirve:** cambia la resolución a la que se dibuja la escena 3D. Native conserva la resolución del perfil nativo; 720p y 480p reducen el detalle y pueden aliviar el trabajo gráfico. El perfil 720p también mantiene desactivado el desenfoque de movimiento.
+**What it does:** changes the resolution used to draw the 3D scene. Native keeps the native profile's resolution; 720p and 480p reduce detail and may reduce GPU load. The 720p profile also keeps motion blur disabled.
 
-La TV puede seguir indicando **1080p**, porque muestra la señal HDMI. Eso no significa que la escena 3D siga renderizándose a 1080p. Menús y pantallas de carga tampoco tienen por qué bajar de nitidez de la misma forma.
+Your TV may still report **1080p** because that is the HDMI output signal. It does not mean the 3D scene is still rendered at 1080p. Menus and loading screens may not lose sharpness in the same way.
 
-**Saved** muestra la selección guardada; **Selected** muestra la opción que estás examinando. Si sales con Círculo antes de aplicar, conservas la selección anterior. Esta opción mantiene el límite de FPS y la elección de sombras.
+**Saved** shows the stored setting; **Selected** shows the option you are browsing. Pressing Circle before applying keeps the previous setting. This option preserves your FPS cap and shadow preference.
 
-## 3. Ajustar el desenfoque de movimiento
+## 3. Adjust motion blur
 
-Abre **FPS and graphics → Graphics → More options → Effects and shadows → Motion blur**. Elige **Enable** o **Disable**, guarda, cierra y vuelve a abrir el juego.
+Open **FPS and graphics → Graphics → More options → Effects and shadows → Motion blur**. Choose **Enable** or **Disable**, save, close the game, and relaunch it.
 
-**Para qué sirve:** permite mantener o quitar el desenfoque que acompaña al movimiento. En Native o 480p se utiliza tu preferencia; el perfil 720p lo mantiene desactivado.
+**What it does:** lets you keep or remove the blur associated with movement. Native and 480p use your preference; the 720p profile keeps it disabled.
 
-## 4. Ajustar las sombras dinámicas
+## 4. Adjust dynamic shadows
 
-Abre **FPS and graphics → Graphics → More options → Effects and shadows → Dynamic shadows**. Elige **Remove shadows** para desactivarlas o **Restore shadows** para recuperarlas. Cierra y vuelve a abrir el juego después de guardar.
+Open **FPS and graphics → Graphics → More options → Effects and shadows → Dynamic shadows**. Choose **Remove shadows** to disable them or **Restore shadows** to bring them back. Close and relaunch the game after saving.
 
-**Para qué sirve:** reduce el trabajo de las sombras dinámicas compatibles, incluidas las de los corredores. La iluminación se mantiene. Las sombras dibujadas dentro de las texturas pueden seguir visibles; no todas las zonas oscuras de una pista son sombras dinámicas.
+**What it does:** reduces the work required for supported dynamic shadows, including racers' shadows. Lighting remains enabled. Shadows painted into textures may remain visible; not every dark area on a track is a dynamic shadow.
 
-## 5. Restaurar los gráficos
+## 5. Restore graphics
 
-Entra en **FPS and graphics → Graphics → More options → Restore graphics**, elige **Restore** y reinicia la aplicación.
+Open **FPS and graphics → Graphics → More options → Restore graphics**, choose **Restore**, and restart the application.
 
-**Para qué sirve:** vuelve a Native con desenfoque de movimiento y sombras dinámicas activados. Mantiene el límite de FPS, la partida, el apodo y los contactos.
+**What it does:** returns to Native with motion blur and dynamic shadows enabled. It preserves your FPS cap, save data, nickname, and contacts.
 
-## 6. Cambiar tu apodo
+## 6. Change your nickname
 
-Abre **Online → My nickname → Change nickname**. Escribe tu nuevo apodo, confirma, cierra el juego y vuelve a abrirlo.
+Open **Online → My nickname → Change nickname**. Enter your new nickname, confirm, close the game, and relaunch it.
 
-**Para qué sirve:** cambia el nombre utilizado para RyuNET. No cambia el nombre de tu cuenta de PSN. Un apodo distinto puede corresponder a otro perfil en el servidor: tus amigos deberán añadir el nombre nuevo. Tu partida local se conserva.
+**What it does:** changes the name used for RyuNET. It does not change your PSN account name. A different nickname may correspond to another server profile, so your friends will need to add the new name. Your local save is preserved.
 
-## 7. Añadir a un amigo
+## 7. Add a friend
 
-Abre **Online → Friends → Add friend**, escribe su apodo exacto de RyuNET y confirma. Utiliza el nombre que esa persona tenga configurado dentro de RyuNET, no su nombre de Discord o PSN.
+Open **Online → Friends → Add friend**, enter their exact RyuNET nickname, and confirm. Use the name that person configured in RyuNET, rather than their Discord or PSN name.
 
-**Para qué sirve:** guarda el contacto en tu lista. Añadirlo no crea una sala ni equivale a enviarle una invitación. Para facilitar que ambos se encuentren, cada uno debe guardar el apodo del otro.
+**What it does:** saves the contact in your list. Adding a contact does not create a lobby or send an invitation. To make it easier to find each other, both players should save each other's nicknames.
 
-## 8. Ver la lista o eliminar un contacto
+## 8. View your list or remove a contact
 
-Abre **Online → Friends → View / remove**. Elige **View list** para consultar los apodos guardados o **Remove friend** para retirar uno de tu lista.
+Open **Online → Friends → View / remove**. Choose **View list** to see your saved nicknames or **Remove friend** to remove a contact from your list.
 
-**Para qué sirve:** permite revisar y limpiar tus propios contactos. Eliminar a alguien de tu lista no promete borrarte de la lista que esa persona haya guardado en su cliente.
+**What it does:** lets you review and manage your own contacts. Removing someone from your list does not guarantee that you disappear from the list stored by their client.
 
-## 9. Unirse a una partida
+## 9. Join a game
 
-Sal del menú L3+R3, entra en **Online → Amigos** desde el menú original de CTR y selecciona el contacto. La otra persona debe estar conectada y en una sala compatible con plazas, antes del comienzo de la carrera.
+Exit L3+R3 settings, open **Online → Friends** in CTR's original menu (**Amigos** if the game is in Spanish), and select the contact. The other player must be online and in a compatible lobby with free slots, before the race starts.
 
-**Para qué sirve:** utiliza la unión del propio CTR. La opción duplicada «Unirse a amigo» de L3+R3 se retiró; gestionar los contactos y entrar a una sala son operaciones distintas.
+**What it does:** uses CTR's own joining interface. The duplicate **Join friend** option was removed from L3+R3; managing contacts and joining a lobby are separate actions.
 
-Se han realizado pruebas de unión a salas privadas y públicas con PC compatible. No se ha demostrado el mismo resultado con todas las redes. Las invitaciones no están implementadas en esta adaptación: el botón Invitar no se presenta como una función disponible de PS4.
+Joining compatible PC clients' private and public lobbies has been tested. The same result has not been demonstrated on every network. Invitations are not implemented in this adaptation: **Invite** is not presented as an available PS4 feature.
