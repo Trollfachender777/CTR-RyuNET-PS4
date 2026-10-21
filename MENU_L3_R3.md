@@ -1,6 +1,25 @@
 # Guía del menú L3+R3
 
-Los nombres de botones de esta guía corresponden al módulo inglés. Presiona **L3 y R3 a la vez** para abrir **RyuNET - PS4 Settings**. Pulsa **Círculo** para volver al juego.
+Presiona **L3 y R3 a la vez** para abrir **RyuNET - Ajustes PS4** en español o **RyuNET - PS4 Settings** en inglés. Pulsa **Círculo** para volver al juego.
+
+Las rutas siguientes usan los nombres ingleses como referencia. Si instalaste la edición española, utiliza sus equivalentes:
+
+| English | Español, como aparece en el módulo |
+| --- | --- |
+| FPS and graphics | FPS y graficos |
+| FPS limit / Unlimited | Limite de FPS / Sin limite |
+| Graphics / Internal resolution | Graficos / Resolucion interna |
+| Native / Next / Apply | Nativa / Siguiente / Aplicar |
+| Selected / Saved | Elegida / Guardada |
+| More options / Effects and shadows | Mas opciones / Efectos y sombras |
+| Motion blur / Enable / Disable | Desenfoque / Activar / Desactivar |
+| Dynamic shadows | Sombras dinamicas |
+| Remove shadows / Restore shadows | Quitar sombras / Restaurar sombras |
+| Restore graphics / Restore | Restaurar graficos / Restaurar |
+| Friends / My nickname | Amigos / Mi apodo |
+| Change nickname / Add friend | Cambiar apodo / Anadir amigo |
+| View / remove / View list | Ver / eliminar / Ver lista |
+| Remove friend | Eliminar amigo |
 
 ## 1. Elegir un límite de FPS
 

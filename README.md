@@ -1,10 +1,21 @@
 # CTR Nitro-Fueled Online - RyuNET
 
-**Borrador privado en revisión.** Por ahora este repositorio contiene la presentación, las instrucciones y los créditos. Las descargas y la publicación pública quedan pendientes de revisión.
-
 Una adaptación no oficial para jugar a **Crash Team Racing: Nitro-Fueled en PS4 con RyuNET**, el servicio comunitario utilizado por OCTR en PC. El juego se ejecuta en la consola; la laptop se utiliza para preparar el instalador.
 
 La idea es facilitar la preparación de una instalación a partir de los archivos de cada jugador y ofrecer ajustes propios para PS4 desde **L3+R3**.
+
+## Descargar el constructor
+
+Entra en [Descargas / Releases](https://github.com/Trollfachender777/CTR-RyuNET-PS4/releases), abre **Constructores — Español e inglés** y elige uno de los ZIP de **Assets**:
+
+| Idioma | Archivo | Carpeta que se obtiene al extraer |
+| --- | --- | --- |
+| Español | `CTR_RyuNET_Constructor_ES.zip` | `CTR_RyuNET_Constructor` |
+| English | `CTR_RyuNET_Builder_EN.zip` | `CTR_RyuNET_Builder_EN` |
+
+Cada ZIP incluye el constructor, su código fuente y las herramientas portátiles. Descarga el ZIP de tu idioma desde Assets; **Code → Download ZIP** descarga los archivos del repositorio y no sustituye al constructor portátil.
+
+Las funciones del juego son equivalentes. La edición inglesa incluye la revisión más reciente del control de memoria y del indicador de progreso del constructor. La española conserva la revisión anterior de esas herramientas; no se presenta como si ya tuviera ese cambio.
 
 ## Qué ofrece esta adaptación
 
@@ -29,7 +40,7 @@ La referencia de red utilizada es **OCTR 0.5.3**. Las versiones posteriores de P
 2. [Configurar los FPS, los gráficos, el apodo y los amigos](MENU_L3_R3.md).
 3. [Autores, proyectos de referencia y herramientas](CREDITOS.md).
 
-La guía explica primero **qué hacer** y, debajo de cada paso, **para qué sirve**. Sus nombres de carpetas y botones corresponden a la edición inglesa `CTR_RyuNET_Builder_EN`.
+La guía explica primero **qué hacer** y, debajo de cada paso, **para qué sirve**. Incluye los nombres de carpetas y botones de las ediciones española e inglesa.
 
 ## Agradecimientos principales
 
@@ -41,4 +52,3 @@ La adaptación para PS4 no se atribuye la creación del port original de PC ni d
 
 Se han comprobado la construcción completa con archivos propios, la lectura de ejecutables desde el PKG generado y las pruebas locales del módulo. El autor ha confirmado el arranque, el acceso a Online y perfiles distintos al cambiar de usuario local en su consola. Una prueba en una consola no demuestra funcionamiento en todos los equipos o redes.
 
-Antes de la publicación se revisarán juntos estos textos, los archivos que se compartirán y los avisos de licencia correspondientes.

@@ -40,7 +40,7 @@ La adaptación agradece a quienes probaron el proyecto y compartieron observacio
 
 ## Licencias y derechos del juego
 
-Los componentes de terceros mantienen sus avisos y licencias originales. Al incorporar el código y las herramientas al repositorio y a las descargas, se conservarán los textos y atribuciones que acompañan a cada componente; estos créditos no los sustituyen.
+Los componentes de terceros mantienen sus avisos y licencias originales. Los ZIP del constructor incluyen su código fuente, los avisos de licencia y las atribuciones que acompañan a sus componentes y herramientas. Estos créditos no sustituyen esos textos.
 
 **Crash Team Racing: Nitro-Fueled**, sus datos y sus marcas pertenecen a sus respectivos titulares. Beenox, Activision y Sony no se presentan como autores ni patrocinadores de esta adaptación comunitaria.
 
