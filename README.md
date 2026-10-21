@@ -6,7 +6,7 @@ The aim is to make it easier to prepare an installation using each player's own 
 
 ## Download the builder
 
-Open [Releases](https://github.com/Trollfachender777/CTR-RyuNET-PS4/releases), select **Builders — English and Spanish**, and choose one of the ZIP files under **Assets**:
+Open [Releases](https://github.com/Trollfachender777/CTR-RyuNET-PS4/releases), select **CTR Nitro-Fueled — Builders — English and Spanish**, and choose one of the ZIP files under **Assets**:
 
 | Language | File | Folder after extraction |
 | --- | --- | --- |
@@ -15,7 +15,7 @@ Open [Releases](https://github.com/Trollfachender777/CTR-RyuNET-PS4/releases), s
 
 Each ZIP includes the builder, its source code, and portable tools. Download your language's ZIP from Assets; **Code → Download ZIP** downloads the repository files and does not replace the portable builder.
 
-Both editions provide equivalent in-game features and use the same validated packaging engine, memory controls, and progress display. The builder runs at reduced Windows priority, uses at most four .NET workers, and monitors only its own child processes. Its 768 MiB working-set threshold per process is a soft threshold, not a hard limit on total RAM usage.
+Both editions provide equivalent in-game features and use the same validated packaging engine, memory controls, and progress display. The builder runs at reduced Windows priority, sets the processor count exposed to .NET to at most four, and monitors only its own child processes. Its 768 MiB working-set threshold per process is a soft threshold, not a hard limit on total RAM usage.
 
 ## Features
 

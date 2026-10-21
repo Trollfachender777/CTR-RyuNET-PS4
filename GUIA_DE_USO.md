@@ -66,6 +66,8 @@ Use **Update / Actualizacion** for the update in [step 3](#3-add-the-update), an
 
 If your single PKG already contains the complete game updated to **1.21**, it can go here too. In that case, leave `Input/Update` or `Entrada/Actualizacion` empty. A PKG containing only an update cannot replace the complete game.
 
+You can also put one folder containing the complete extracted CUSA13795 game already updated to **1.21** in **Input/Game** or **Entrada/Juego**, and leave the update folder empty. Use one input here: the PKG or the extracted folder.
+
 ## 3. Add the update
 
 Open **Input → Update** in English or **Entrada → Actualizacion** in Spanish and add a single **1.21 update PKG for CUSA13795**, unless it is already merged into the complete game from the previous step.
@@ -138,9 +140,9 @@ The first percentage is approximate progress for the whole build. The percentage
 
 Both editions show approximate progress, the current stage, and elapsed time on the bottom line. **Stage left (~): calculating...** in English, or **Falta etapa (~): calculando...** in Spanish, means no reliable estimate is available for that stage. During **Building and testing** / **Compilando y probando**, a step counter shows the current build or test step; it may remain on the same step while that work runs.
 
-Both editions use the same validated packaging engine and resource controls. They run at reduced Windows priority, limit .NET scheduling to at most four workers, and prevent simultaneous builder sessions. A memory guard reclaims resident memory from the builder's own child processes above a soft threshold of 768 MiB per process. This is not a hard cap on total RAM, and temporary peaks can exceed it. No unrelated application or global Windows preference is changed.
+Both editions use the same validated packaging engine and resource controls. They run at reduced Windows priority, set the processor count exposed to .NET to at most four, and prevent simultaneous builder sessions. A memory guard reclaims resident memory from the builder's own child processes above a soft threshold of 768 MiB per process. This is not a hard cap on total RAM, and temporary peaks can exceed it. No unrelated application or global Windows preference is changed.
 
-To check what is happening, consult the **Build log** path in English or **Registro de compilacion** in Spanish (`Trabajo/<build>/compilacion.log`). A large output file alone does not mean the process is finished: encryption and verification may still be running.
+To check what is happening, consult the **Build log** path in English (`Work/<build>/build.log`) or **Registro de compilacion** in Spanish (`Trabajo/<build>/compilacion.log`). A large output file alone does not mean the process is finished: encryption and verification may still be running.
 
 ### What is script 2 for?
 

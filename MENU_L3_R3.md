@@ -67,7 +67,7 @@ Open **Online → My nickname → Change nickname**. Enter your new nickname, co
 
 ## 7. Add a friend
 
-Open **Online → Friends → Add friend**, enter their exact RyuNET nickname, and confirm. Use the name that person configured in RyuNET, rather than their Discord or PSN name.
+Open **Online → Friends → Add friend**, enter their exact RyuNET nickname, and confirm. Use the name that person configured in RyuNET, rather than their Discord or PSN name. After saving, exit the settings and re-enter **Online** to refresh the list.
 
 **What it does:** saves the contact in your list. Adding a contact does not create a lobby or send an invitation. To make it easier to find each other, both players should save each other's nicknames.
 
