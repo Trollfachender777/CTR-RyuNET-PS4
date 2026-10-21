@@ -92,6 +92,12 @@ Return to the main folder and open **0_DIAGNOSTICS.cmd** in English or **0_DIAGN
 
 Open **1_CHECK_FILES.cmd** in English or **1_COMPROBAR.cmd** in Spanish. Check that it recognizes the game, CUSA, update, and any DLC you added.
 
+These screenshots highlight the script to open:
+
+| English (EN) | Spanish (ES) |
+| :---: | :---: |
+| <img src="tutorial-check-en.png" alt="English file check: 1_CHECK_FILES.cmd selected" width="300"> | <img src="tutorial-check-es.png" alt="Spanish file check: 1_COMPROBAR.cmd selected" width="300"> |
+
 **What it does:** checks input placement and metadata before the lengthy build begins. It does not build the installer yet. Extraction and later checks also validate the executables required by the adaptation.
 
 ## 7. Build the PKG
