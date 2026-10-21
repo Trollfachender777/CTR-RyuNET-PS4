@@ -100,6 +100,22 @@ These screenshots highlight the script to open:
 
 **What it does:** checks input placement and metadata before the lengthy build begins. It does not build the installer yet. Extraction and later checks also validate the executables required by the adaptation.
 
+### Example check results
+
+Compare the listed files with the game, update, and optional DLC you placed in the input folders. These examples show the base game at **01.00** and a separate update at **01.21**; that is the expected combination for this setup. Your own filenames may differ.
+
+**English (EN)**
+
+![English input-check result: CUSA13795 game, update 1.21, and optional Deluxe Pack](tutorial-check-result-en.png)
+
+**Spanish (ES)**
+
+![Spanish input-check result: CUSA13795 game, update 1.21, and optional Deluxe Pack](tutorial-check-result-es.png)
+
+Click a screenshot to view it at full size. The **output / salida** field is the planned installer name; this check has not created that PKG yet.
+
+When the check finishes without an error, press any key to close its window and continue to step 7.
+
 ## 7. Build the PKG
 
 Open **3_BUILD_PKG.cmd** in English or **3_GENERAR_PKG.cmd** in Spanish. Leave the window open until it displays **Finished** or **Terminado** and the output folder. Do not run two builds at the same time.
