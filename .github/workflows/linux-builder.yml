@@ -1,0 +1,59 @@
+name: Linux builder validation
+on:
+  push:
+    branches: [linux-builder]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  native:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - language: en
+            mib: 32
+          - language: es
+            mib: 513
+    steps:
+      - name: Fetch exact public source commit
+        shell: bash
+        run: |
+          git init .
+          git remote add origin "https://github.com/${GITHUB_REPOSITORY}.git"
+          git fetch --depth=1 origin "$GITHUB_SHA"
+          git checkout --detach FETCH_HEAD
+      - name: Extract isolated source candidate
+        shell: bash
+        run: |
+          mkdir 'Linux builder test'
+          unzip -q LINUX_CANDIDATE_SOURCE.zip -d 'Linux builder test'
+          cd 'Linux builder test'
+          python3 tests/download_runtimes.py
+          chmod +x ./*.sh
+          ./0_SETUP.sh '${{ matrix.language }}'
+      - name: Frontend, resource controls and Linux locks
+        working-directory: Linux builder test
+        run: Tools/Python/bin/python3 -B tests/test_linux_builder.py
+      - name: Encrypted PKG round trip and rejection tests
+        working-directory: Linux builder test
+        run: Tools/Python/bin/python3 -B tests/test_package_backend.py --mib '${{ matrix.mib }}'
+      - name: Approved PS4 module on game-free native fixtures
+        working-directory: Linux builder test
+        run: Tools/Python/bin/python3 -B tests/run_native_checks.py --language '${{ matrix.language }}'
+      - name: Record test scope and results
+        if: always()
+        shell: bash
+        run: |
+          echo '## Linux native checks (${{ matrix.language }})' >> "$GITHUB_STEP_SUMMARY"
+          echo 'Synthetic data only. No game files, user data, identities or full game builds are uploaded.' >> "$GITHUB_STEP_SUMMARY"
+          for report in 'Linux builder test'/Work/test-results/*.json; do
+            [ -f "$report" ] || continue
+            echo "### $(basename "$report")" >> "$GITHUB_STEP_SUMMARY"
+            echo '```json' >> "$GITHUB_STEP_SUMMARY"
+            cat "$report" >> "$GITHUB_STEP_SUMMARY"
+            echo '' >> "$GITHUB_STEP_SUMMARY"
+            echo '```' >> "$GITHUB_STEP_SUMMARY"
+          done
