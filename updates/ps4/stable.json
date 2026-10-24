@@ -11,9 +11,10 @@
   "cusa": "CUSA13795",
   "game_version": "01.21",
   "es_size": 161392,
-  "es_sha256": "45db7b28093dcc040d0d0a9fce99cad9bb2ed72a1c55644d646a51f62807f51d",
+  "es_sha256": "1aa59a0c25810ccc08c384d1b7dbbae85603eda7ce1e80d3368c52c43278f255",
   "en_size": 161392,
-  "en_sha256": "f073e110a091fefa22caca9d22b03814df2a94f8ddf4faf1bdd41522812dea2c",
+  "en_sha256": "4c07444fdf6c4eab4b3e3ffd673a53e7d17b629456c18949803ab2b12bf57ca9",
   "source_url": "https://raw.githubusercontent.com/Trollfachender777/CTR-RyuNET-PS4/main/updates/ps4/v1.1.0/source.zip",
-  "source_sha256": "69bfd1f06004abc59285f7ed82714b5e286228866a5076440f9550ba89bd51a5"
+  "source_sha256": "0d8cca3288752d37a74b45dfc0ee0fb4ed3de2917ea9a7325edded7f1e4db7d2",
+  "build_revision": "permissions-r2"
 }
