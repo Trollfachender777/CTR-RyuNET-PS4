@@ -1,0 +1,13 @@
+{
+  "successful": true,
+  "running_updater": "v1.1.0 permissions-r2",
+  "downloaded_version": "v1.2.0",
+  "payload_sha256": "f91d7beba9d6baa88ffce3ecac30fc6f397a29a3d53fc26a783058071775ad76",
+  "bytes": 179440,
+  "actual_self_executed": true,
+  "filesystem_emulated": true,
+  "console_written": false,
+  "replacement_mode": "0755",
+  "rollback_mode": "0755",
+  "per_user_files_preserved": true
+}
