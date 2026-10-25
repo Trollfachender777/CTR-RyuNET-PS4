@@ -26,13 +26,17 @@ Both editions provide equivalent in-game features and use the same validated pac
 - Native, 720p, or 480p internal resolution; motion blur and dynamic shadow options; and graphics reset.
 - Contact management and joining games through CTR's original Friends menu, using compatible clients.
 
-The 60 FPS setting is a cap: actual performance depends on the track and console. Invitations are not implemented in this PS4 adaptation.
+The 60 FPS setting is a cap: actual performance depends on the track and console. The public builder release does not include invitations; the v1.2.0 module candidate adds RyuNET-menu invitations for testing.
+
+## PS4 module candidate v1.2.0
+
+A [PS4 v1.2.0 network candidate](updates/ps4/v1.2.0/) adapts selected OCTR v0.6.4 protocols: server friends and requests, invitations through L3+R3, regional relays, peer ping and signed background requests. It requires an already working compatible PS4 module updater. Download and restart are being validated on the development console; this does not replace the public builder ZIPs or establish compatibility with every network. See the candidate notes for the exact scope and test steps.
 
 ## Before you start
 
 This integration supports **CUSA13795 with update 1.21 and compatible executables**. Each player supplies their own game, update, and optional DLC. Game files, saves, accounts, and personal keys are not distributed.
 
-The network implementation is based on **OCTR 0.5.3**. Later PC releases may include features that have not yet been adapted or tested here. Compatibility with every CUSA, firmware version, or network setup is not guaranteed.
+The public builder release is based on **OCTR 0.5.3**. Later PC releases may include features that have not yet been adapted or tested here. Compatibility with every CUSA, firmware version, or network setup is not guaranteed.
 
 ## Read the instructions in this order
 
