@@ -1,5 +1,9 @@
 # User guide: from the input folders to your first launch
 
+**Installing for the first time?** Follow this guide for the unchanged English/Spanish builders below.
+
+**Already have CTR RyuNET on PS4?** Use the separate [v1.2.1 PS4 update](https://github.com/Trollfachender777/CTR-RyuNET-PS4/releases/tag/v1.2.1) without running the builder or converting the game again. The builders/converters have not been updated. The release explains the L3+R3 update route and the exact base-package requirement for the manual PKG alternative.
+
 This guide covers both the English and Spanish editions. Choose one ZIP and use the folders and scripts belonging to that edition.
 
 | Action or folder | English edition | Spanish edition |
@@ -18,7 +22,7 @@ This guide covers both the English and Spanish editions. Choose one ZIP and use 
 
 ## 1. Extract the builder
 
-Open [Releases](https://github.com/Trollfachender777/CTR-RyuNET-PS4/releases), select **CTR Nitro-Fueled — Builders — English and Spanish**, and expand **Assets**. Download `CTR_RyuNET_Builder_EN.zip` for English or `CTR_RyuNET_Constructor_ES.zip` for Spanish.
+Open the [unchanged English and Spanish builder release](https://github.com/Trollfachender777/CTR-RyuNET-PS4/releases/tag/constructores) and expand **Assets**. Download `CTR_RyuNET_Builder_EN.zip` for English or `CTR_RyuNET_Constructor_ES.zip` for Spanish.
 
 These screenshots show the downloaded ZIP files before extraction. Match the filename to your chosen language; the archive icon may differ depending on your ZIP application.
 

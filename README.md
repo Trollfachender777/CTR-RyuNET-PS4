@@ -1,12 +1,25 @@
 # CTR Nitro-Fueled Online - RyuNET
 
+## Latest PS4 update: v1.2.1
+
+**[Open v1.2.1 — PS4 updates, English and Spanish](https://github.com/Trollfachender777/CTR-RyuNET-PS4/releases/tag/v1.2.1)**
+
+**The builders/converters have not been updated. Update your existing PS4 installation without rebuilding or converting the game again.**
+
+- **Option 1:** use **L3+R3 → Online and extras → PS4 updates** on an installation with the compatible updater, then close and reopen CTR normally.
+- **Option 2:** [English manual PKG](https://github.com/Trollfachender777/CTR-RyuNET-PS4/releases/download/v1.2.1/CTR_Nitro-Fueled_Online_RyuNET_v1.2.1_Update_EN.pkg) · [PKG manual en español](https://github.com/Trollfachender777/CTR-RyuNET-PS4/releases/download/v1.2.1/CTR_Nitro-Fueled_Online_RyuNET_v1.2.1_Update_ES.pkg).
+
+**Manual PKG requirement:** the r4 packages are paired to the tested reference base. Independently rebuilt bases may have different fingerprints even with the same CUSA/title ID. Read the compatibility section in the release before installing. The working L3+R3 update route remains available.
+
+En español: **el convertidor sigue igual; la actualización de PS4 se instala aparte, sin volver a convertir el juego**. Los PKG manuales requieren una base cuya huella coincida.
+
 An unofficial adaptation for playing **Crash Team Racing: Nitro-Fueled on PS4 with RyuNET**, the community service used by OCTR on PC. The game runs on the console; a Windows computer is used to build the installer.
 
 The aim is to make it easier to prepare an installation using each player's own files and provide PS4-specific settings through **L3+R3**.
 
 ## Download the builder
 
-Open [Releases](https://github.com/Trollfachender777/CTR-RyuNET-PS4/releases), select **CTR Nitro-Fueled — Builders — English and Spanish**, and choose one of the ZIP files under **Assets**:
+For an initial installation, open the [unchanged builder release](https://github.com/Trollfachender777/CTR-RyuNET-PS4/releases/tag/constructores) and choose one ZIP under **Assets**:
 
 | Language | File | Folder after extraction |
 | --- | --- | --- |
@@ -26,15 +39,15 @@ Both editions provide equivalent in-game features and use the same validated pac
 - Native, 720p, or 480p internal resolution; motion blur and dynamic shadow options; and graphics reset.
 - Contact management and joining games through CTR's original Friends menu, using compatible clients.
 
-The 60 FPS setting is a cap: actual performance depends on the track and console. The public builder release does not include invitations; the v1.2.0 module candidate adds RyuNET-menu invitations for testing.
+The 60 FPS setting is a cap: actual performance depends on the track and console. The public builder release does not include invitations; the v1.2.1 module adds RyuNET-menu invitations, with wider network testing still in progress.
 
-## PS4 module candidate v1.2.0
+## PS4 module v1.2.1
 
-A [PS4 v1.2.0 network candidate](updates/ps4/v1.2.0/) adapts selected OCTR v0.6.4 protocols: server friends and requests, invitations through L3+R3, regional relays, peer ping and signed background requests. It requires an already working compatible PS4 module updater. Download and restart are being validated on the development console; this does not replace the public builder ZIPs or establish compatibility with every network. See the candidate notes for the exact scope and test steps.
+The [PS4 v1.2.1 update](https://github.com/Trollfachender777/CTR-RyuNET-PS4/releases/tag/v1.2.1) adapts selected OCTR v0.6.4 network protocols: server friends and requests, RyuNET-menu invitations, regional relays, peer ping and signed background requests. The maintainer confirmed the v1.2.1 module, Online, L3+R3 and season-event activation on the reference PS4. Manual PKGs use the previously corrected base-binding format; the release describes their compatibility and validation. The update also restores automatic season-event activation from the server. The public builder ZIPs are unchanged. See the release for update instructions and the exact base-package requirement for manual PKGs.
 
 ## Before you start
 
-This integration supports **CUSA13795 with update 1.21 and compatible executables**. Each player supplies their own game, update, and optional DLC. Game files, saves, accounts, and personal keys are not distributed.
+This integration supports **CUSA13795 with update 1.21 and compatible executables**. Each player supplies their own game, update, and optional DLC. Portable builders and source archives contain no game data, saves, accounts or personal identity keys. Manual update PKGs are patches containing the modified launch executable and RyuNET module for the matching existing installation, not the complete game or DLC.
 
 The public builder release is based on **OCTR 0.5.3**. Later PC releases may include features that have not yet been adapted or tested here. Compatibility with every CUSA, firmware version, or network setup is not guaranteed.
 
