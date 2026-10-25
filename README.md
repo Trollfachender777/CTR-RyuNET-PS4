@@ -7,11 +7,11 @@
 **The builders/converters have not been updated. Update your existing PS4 installation without rebuilding or converting the game again.**
 
 - **Option 1:** use **L3+R3 → Online and extras → PS4 updates** on an installation with the compatible updater, then close and reopen CTR normally.
-- **Option 2:** [English manual PKG](https://github.com/Trollfachender777/CTR-RyuNET-PS4/releases/download/v1.2.1/CTR_Nitro-Fueled_Online_RyuNET_v1.2.1_Update_EN.pkg) · [PKG manual en español](https://github.com/Trollfachender777/CTR-RyuNET-PS4/releases/download/v1.2.1/CTR_Nitro-Fueled_Online_RyuNET_v1.2.1_Update_ES.pkg).
+- **Option 2:** [English manual update ZIP](https://github.com/Trollfachender777/CTR-RyuNET-PS4/releases/download/v1.2.1/CTR_RyuNET_v1.2.1_PKG_Update_EN.zip) · [Actualizacion manual ES](https://github.com/Trollfachender777/CTR-RyuNET-PS4/releases/download/v1.2.1/CTR_RyuNET_v1.2.1_PKG_Update_ES.zip).
 
-**Manual PKG requirement:** the r4 packages are paired to the tested reference base. Independently rebuilt bases may have different fingerprints even with the same CUSA/title ID. Read the compatibility section in the release before installing. The working L3+R3 update route remains available.
+**Manual PKG compatibility correction:** the old reference-bound PKGs have been replaced by ES/EN ZIPs. Extract your chosen ZIP and run `START.cmd`; select the exact RyuNET base PKG you installed, or enter your GoldHEN FTP address to read its base metadata. Install the generated `_Matched.pkg` from `Output` with CTR closed. Requires Python 3.9+. No full game reconversion is needed. The L3+R3 updater remains available. See the release for details and validation status.
 
-En español: **el convertidor sigue igual; la actualización de PS4 se instala aparte, sin volver a convertir el juego**. Los PKG manuales requieren una base cuya huella coincida.
+En español: **el convertidor sigue igual; la actualización de PS4 se instala aparte, sin volver a convertir el juego**. Los nuevos ZIP manuales preparan un PKG vinculado a la base de cada usuario; lee los pasos de la release.
 
 An unofficial adaptation for playing **Crash Team Racing: Nitro-Fueled on PS4 with RyuNET**, the community service used by OCTR on PC. The game runs on the console; a Windows computer is used to build the installer.
 
@@ -43,7 +43,7 @@ The 60 FPS setting is a cap: actual performance depends on the track and console
 
 ## PS4 module v1.2.1
 
-The [PS4 v1.2.1 update](https://github.com/Trollfachender777/CTR-RyuNET-PS4/releases/tag/v1.2.1) adapts selected OCTR v0.6.4 network protocols: server friends and requests, RyuNET-menu invitations, regional relays, peer ping and signed background requests. The maintainer confirmed the v1.2.1 module, Online, L3+R3 and season-event activation on the reference PS4. Manual PKGs use the previously corrected base-binding format; the release describes their compatibility and validation. The update also restores automatic season-event activation from the server. The public builder ZIPs are unchanged. See the release for update instructions and the exact base-package requirement for manual PKGs.
+The [PS4 v1.2.1 update](https://github.com/Trollfachender777/CTR-RyuNET-PS4/releases/tag/v1.2.1) adapts selected OCTR v0.6.4 network protocols: server friends and requests, RyuNET-menu invitations, regional relays, peer ping and signed background requests. The maintainer confirmed the v1.2.1 module, Online, L3+R3 and season-event activation on the reference PS4. Manual update ZIPs now prepare a PKG for each compatible installed base; the release describes the procedure and validation status. The update also restores automatic season-event activation from the server. The public builder ZIPs are unchanged. See the release for update instructions and the base-matching procedure for manual PKGs.
 
 ## Before you start
 
