@@ -1,0 +1,23 @@
+{
+  "id": 1005002,
+  "tag_name": "v1.5.2",
+  "published_at": "2026-11-01T12:00:00Z",
+  "html_url": "https://github.com/Trollfachender777/CTR-RyuNET-PS4/releases/tag/v1.5.2",
+  "draft": false,
+  "prerelease": false,
+  "schema": 1,
+  "module_abi": 1,
+  "title_id": "RYUN00001",
+  "cusa": "CUSA13795",
+  "game_version": "01.21",
+  "source_sha256": "9205681e2b93f939abc39230215fb27e1eb7ac4882630dd3ce8cc41e74ed41d9",
+  "native_ui_asset": {
+    "bytes": 7204396,
+    "sha256": "5b4a4062b75966fa0ed1b9485dd3c01b76f9af12454312dc1a02da971780b8ed",
+    "file": "assets/ui-5b4a4062b75966fa.pak"
+  },
+  "es_size": 789632,
+  "es_sha256": "6968b1e988879ae2ea6d49380c2f7e70d9a6f47519e07cf2017b5062845fbe0c",
+  "en_size": 789632,
+  "en_sha256": "77d691d30854e97519537d0a761f2e0fb485bc7f61650f626c78f0bf1db8460c"
+}
