@@ -1,8 +1,20 @@
 # User guide: from the input folders to your first launch
 
+## PS4 v1.5.2 cumulative update
+
+The **builders/converters are unchanged**. Update an existing compatible RyuNET installation separately, without rebuilding the complete game. [Open the v1.5.2 release](https://github.com/Trollfachender777/CTR-RyuNET-PS4/releases/tag/v1.5.2).
+
+- **In-game:** L3+R3 → Online and extras → PS4 updates → Check → View result → Update now. Wait for Update prepared, close CTR normally and reopen it.
+- **Manual fallback:** extract the ES/EN **PKG Update ZIP**, run **START.cmd**, and supply the exact installed RyuNET base PKG or your own GoldHEN FTP address. Install the generated **Output/*_Matched.pkg** with CTR closed. Python 3.9+ is required. The ZIP includes the update template; it does not reconvert the full game.
+
+This cumulative PS4 revision is based on **OCTR PC v0.7.5** and adds native in-game Graphics and private mode/cup menus while retaining the approved Online, identity, FPS and graphics options. An older installation missing the UI resource archive keeps its previous code active while the verified resource download completes; follow the ready notification and close/reopen CTR normally.
+
+No player identity, online key, contacts, settings or save is included. New users create their own identities, and existing local profiles are preserved. Read the release's validation status and known limitations before installing. The official PC client is unchanged.
+
+
 **Installing for the first time?** Follow this guide for the unchanged English/Spanish builders below.
 
-**Already have CTR RyuNET on PS4?** Use the separate [v1.2.1 PS4 update](https://github.com/Trollfachender777/CTR-RyuNET-PS4/releases/tag/v1.2.1) without running the builder or converting the game again. The builders/converters have not been updated. The release explains the L3+R3 update route and the base-matching tool included in the manual update ZIPs. Extract the ES or EN update ZIP, run `START.cmd`, and select your exact RyuNET base PKG or enter your GoldHEN FTP address. Install the generated `_Matched.pkg` from `Output` with CTR closed. This prepares the small update only; it does not reconvert the game. Python 3.9+ is required. See the release for compatibility and validation status.
+**Already have CTR RyuNET on PS4?** Use the separate [v1.5.2 PS4 update](https://github.com/Trollfachender777/CTR-RyuNET-PS4/releases/tag/v1.5.2) without running the builder or converting the game again. The builders/converters have not been updated. The release explains the L3+R3 update route and the base-matching tool included in the manual update ZIPs. Extract the ES or EN update ZIP, run `START.cmd`, and select your exact RyuNET base PKG or enter your GoldHEN FTP address. Install the generated `_Matched.pkg` from `Output` with CTR closed. This prepares the small update only; it does not reconvert the game. Python 3.9+ is required. See the release for compatibility and validation status.
 
 This guide covers both the English and Spanish editions. Choose one ZIP and use the folders and scripts belonging to that edition.
 

@@ -1,6 +1,18 @@
 # L3+R3 settings guide
 
-**Version scope:** sections 1–9 describe the original settings supplied by the unchanged public builders. The separate [v1.2.1 PS4 update](https://github.com/Trollfachender777/CTR-RyuNET-PS4/releases/tag/v1.2.1) keeps those approved settings and adds the server-friends, invitations and network screens described in section 10. Update an existing installation without converting the game again; see the release for compatibility and installation instructions.
+## PS4 v1.5.2 cumulative update
+
+The **builders/converters are unchanged**. Update an existing compatible RyuNET installation separately, without rebuilding the complete game. [Open the v1.5.2 release](https://github.com/Trollfachender777/CTR-RyuNET-PS4/releases/tag/v1.5.2).
+
+- **In-game:** L3+R3 → Online and extras → PS4 updates → Check → View result → Update now. Wait for Update prepared, close CTR normally and reopen it.
+- **Manual fallback:** extract the ES/EN **PKG Update ZIP**, run **START.cmd**, and supply the exact installed RyuNET base PKG or your own GoldHEN FTP address. Install the generated **Output/*_Matched.pkg** with CTR closed. Python 3.9+ is required. The ZIP includes the update template; it does not reconvert the full game.
+
+This cumulative PS4 revision is based on **OCTR PC v0.7.5** and adds native in-game Graphics and private mode/cup menus while retaining the approved Online, identity, FPS and graphics options. An older installation missing the UI resource archive keeps its previous code active while the verified resource download completes; follow the ready notification and close/reopen CTR normally.
+
+No player identity, online key, contacts, settings or save is included. New users create their own identities, and existing local profiles are preserved. Read the release's validation status and known limitations before installing. The official PC client is unchanged.
+
+
+**Version scope:** sections 1–9 describe the original settings supplied by the unchanged public builders. The separate [v1.5.2 PS4 update](https://github.com/Trollfachender777/CTR-RyuNET-PS4/releases/tag/v1.5.2) keeps those approved settings and adds the server-friends, invitations and network screens described in section 10. Update an existing installation without converting the game again; see the release for compatibility and installation instructions.
 
 Press **L3 and R3 together** to open **RyuNET - PS4 Settings** in English or **RyuNET - Ajustes PS4** in Spanish. Press **Circle** to return to the game.
 
@@ -85,12 +97,12 @@ Exit L3+R3 settings, open **Online → Friends** in CTR's original menu (**Amigo
 
 **What it does:** uses CTR's own joining interface. The duplicate **Join friend** option was removed from L3+R3; managing contacts and joining a lobby are separate actions.
 
-Joining compatible PC clients' private and public lobbies has been tested. The same result has not been demonstrated on every network. The original public-builder module does not implement invitations. With the separate v1.2.1 update, use the RyuNET invitations screen described below; the original PSN invitation dialog is not replaced.
+Joining compatible PC clients' private and public lobbies has been tested. The same result has not been demonstrated on every network. The original public-builder module does not implement invitations. With the separate v1.5.2 update, use the RyuNET invitations screen described below; the original PSN invitation dialog is not replaced.
 
 
-## 10. Server friends and invitations in v1.2.1
+## 10. Server friends and invitations in v1.5.2
 
-Install the [separate PS4 update](https://github.com/Trollfachender777/CTR-RyuNET-PS4/releases/tag/v1.2.1) on a compatible installation, close CTR normally and reopen it. The English and Spanish converter ZIPs remain unchanged.
+Install the [separate PS4 update](https://github.com/Trollfachender777/CTR-RyuNET-PS4/releases/tag/v1.5.2) on a compatible installation, close CTR normally and reopen it. The English and Spanish converter ZIPs remain unchanged.
 
 Enter Online, then open **L3+R3 → Online → Friends → View / remove → View list → Server friends**. Use **List / invite** to review accepted friends, or **Requests and extras → Incoming requests** to accept or decline requests. Use the other player's exact RyuNET nickname and a compatible current client. New friendships require that player's acceptance; a saved local contact alone is not an accepted server friendship.
 
@@ -102,6 +114,6 @@ Use **Invitations / network** in the server-friends menu to review incoming invi
 
 For later PS4 updates, open **L3+R3 → Online and extras → PS4 updates → Check for updates → View result**. Confirm an available update, wait for **Update prepared**, close CTR normally and reopen it. Spanish labels are **Online y extras → Actualizaciones PS4 → Buscar actualizaciones → Ver resultado → Actualizar ahora**.
 
-## 11. Automatic season events in v1.2.1
+## 11. Automatic season events in v1.5.2
 
 The module reads the active event from RyuNET in the background and applies it when the next track loads. No extra menu switch or replacement game assets are needed.
