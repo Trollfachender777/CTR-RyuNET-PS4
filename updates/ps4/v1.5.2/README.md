@@ -1,11 +1,11 @@
-# PS4 v1.5.2 validation candidate
+# CTR RyuNET PS4 v1.5.2
 
-Pinned upstream: OCTR PC v0.7.5. Local validation passed 338 test groups per language. Full console validation is pending.
+Public cumulative PS4 update, pinned to OCTR PC v0.7.5.
 
-The stable update channel remains unchanged until validation is complete. These files support the selected candidate test channel.
+[Release, ES/EN manual update ZIPs, source, checksums and full instructions](https://github.com/Trollfachender777/CTR-RyuNET-PS4/releases/tag/v1.5.2).
 
-No player profile, account ID, online key, contacts, settings or save is included. Existing local profiles are preserved. The official PC client and public builders are unchanged.
+The public builders are unchanged. Existing installations can use L3+R3 updates or generate a matched manual update PKG. No player identity, key, contacts, settings or save is included.
 
-Includes verified native-menu resource delivery and rollback on incomplete migration. The reported PC-host Itemless crate behavior is not claimed fixed.
+The maintainer confirmed download/restart, Online, L3+R3 and native Graphics. Local regression and package audits passed; the release documents remaining hardware/network coverage and the PC-host Itemless limitation.
 
-Credits: Ryu7w7 and OCTR/RyuNET contributors, original PC-port authors, n0buholic, Vo1dTear, immaculatevibes2025 and contributors, PS4 contributors and AI assistance. Original licenses apply.
+Credits remain with the original OCTR/RyuNET, PC-port and tool authors, PS4 contributors and AI assistance. See the release and corresponding source for details and licenses.
