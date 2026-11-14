@@ -1,8 +1,8 @@
 {
-  "id": 430675643,
-  "tag_name": "v1.5.2",
-  "published_at": "2026-11-01T15:37:48Z",
-  "html_url": "https://github.com/Trollfachender777/CTR-RyuNET-PS4/releases/tag/v1.5.2",
+  "id": 445439705,
+  "tag_name": "v1.6.0",
+  "published_at": "2026-11-14T16:45:10Z",
+  "html_url": "https://github.com/Trollfachender777/CTR-RyuNET-PS4/releases/tag/v1.6.0",
   "draft": false,
   "prerelease": false,
   "schema": 1,
@@ -10,14 +10,42 @@
   "title_id": "RYUN00001",
   "cusa": "CUSA13795",
   "game_version": "01.21",
-  "source_sha256": "95971ef452c1603933dedb825e577536ee1a01e62addbea9a517a0c22f80dd99",
+  "source_sha256": "2d28b1d858ee0fcd610f5fd7721e0d3a05367fe8b63559685e9a89e879fb658d",
   "native_ui_asset": {
-    "bytes": 7204396,
-    "sha256": "5b4a4062b75966fa0ed1b9485dd3c01b76f9af12454312dc1a02da971780b8ed",
-    "file": "assets/ui-5b4a4062b75966fa.pak"
+    "file": "assets/ui-23f19a2c27fd4ec3.pak",
+    "bytes": 8768193,
+    "sha256": "23f19a2c27fd4ec3e99ac676888e344eadae78920c885bf8524d44e9a8605b52"
   },
-  "es_size": 789632,
-  "es_sha256": "6968b1e988879ae2ea6d49380c2f7e70d9a6f47519e07cf2017b5062845fbe0c",
-  "en_size": 789632,
-  "en_sha256": "77d691d30854e97519537d0a761f2e0fb485bc7f61650f626c78f0bf1db8460c"
+  "ps4_resources": {
+    "ui": {
+      "file": "assets/ui-23f19a2c27fd4ec3.pak",
+      "bytes": 8768193,
+      "sha256": "23f19a2c27fd4ec3e99ac676888e344eadae78920c885bf8524d44e9a8605b52"
+    },
+    "octane_battleteam_ranking": {
+      "file": "assets/resource-f5c11244abed26eb5f6edc225b9688e79cc4116b50a973de9e3febdf2e613b1d.pak",
+      "bytes": 1585524,
+      "sha256": "f5c11244abed26eb5f6edc225b9688e79cc4116b50a973de9e3febdf2e613b1d"
+    },
+    "octane_race_ranking": {
+      "file": "assets/resource-9028760c2d829e208b180c8dd674b5c994efdd11992d09a6942efc24e4d285cc.pak",
+      "bytes": 671807,
+      "sha256": "9028760c2d829e208b180c8dd674b5c994efdd11992d09a6942efc24e4d285cc"
+    },
+    "tt_reference": {
+      "file": "assets/resource-51749025c1539e1f59afd073e41c5d446414a046e4699898325accb4d7c482e3.bin",
+      "bytes": 6945252,
+      "sha256": "51749025c1539e1f59afd073e41c5d446414a046e4699898325accb4d7c482e3"
+    }
+  },
+  "resource_urls": {
+    "ui": "https://raw.githubusercontent.com/Trollfachender777/CTR-RyuNET-PS4/main/updates/ps4/assets/ui-23f19a2c27fd4ec3.pak",
+    "octane_battleteam_ranking.pak": "https://raw.githubusercontent.com/Trollfachender777/CTR-RyuNET-PS4/main/updates/ps4/assets/resource-f5c11244abed26eb5f6edc225b9688e79cc4116b50a973de9e3febdf2e613b1d.pak",
+    "octane_race_ranking.pak": "https://raw.githubusercontent.com/Trollfachender777/CTR-RyuNET-PS4/main/updates/ps4/assets/resource-9028760c2d829e208b180c8dd674b5c994efdd11992d09a6942efc24e4d285cc.pak",
+    "tt-reference.bin": "https://raw.githubusercontent.com/Trollfachender777/CTR-RyuNET-PS4/main/updates/ps4/assets/resource-51749025c1539e1f59afd073e41c5d446414a046e4699898325accb4d7c482e3.bin"
+  },
+  "es_size": 545136,
+  "es_sha256": "0a9b1081c1e5cc6a0c0ffc70e52853d816a1a34f1c4052544415a6d7d9e78733",
+  "en_size": 545136,
+  "en_sha256": "0c72b6585a572b79d81b6ed0f0eabe5329232f90cdd4eb9970976f828523be77"
 }
