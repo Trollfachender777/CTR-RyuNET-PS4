@@ -1,8 +1,8 @@
 {
-  "id": 460840869,
-  "tag_name": "v1.7.1",
-  "published_at": "2026-11-27T16:32:43Z",
-  "html_url": "https://github.com/Trollfachender777/CTR-RyuNET-PS4/releases/tag/v1.7.1",
+  "id": 460949175,
+  "tag_name": "v1.7.2",
+  "published_at": "2026-11-27T18:36:13Z",
+  "html_url": "https://github.com/Trollfachender777/CTR-RyuNET-PS4/releases/tag/v1.7.2",
   "draft": false,
   "prerelease": false,
   "schema": 1,
@@ -44,7 +44,7 @@
     "tt-reference.bin": "https://raw.githubusercontent.com/Trollfachender777/CTR-RyuNET-PS4/main/updates/ps4/assets/resource-51749025c1539e1f59afd073e41c5d446414a046e4699898325accb4d7c482e3.bin"
   },
   "es_size": 1015520,
-  "es_sha256": "c28ad8ca2ea9498248085667a3714f928b2986f1a54d853d130bff4d59c65ff4",
+  "es_sha256": "85743a1ee5b0f87861a54c78882530d177067988d5fac2bd6f0e7fede02a4359",
   "en_size": 1015520,
-  "en_sha256": "c151035078c705f247af14792bc0c83b3be9de6f02d24fef28d76cf8b2b371a6"
+  "en_sha256": "37f677f0ac384611c89a57c8d3344e23e9305f05799e3a032a70e25df8403a40"
 }
